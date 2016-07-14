@@ -1,5 +1,6 @@
 package com.example.android.justjava;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -10,7 +11,7 @@ import java.text.NumberFormat;
 /**
  * This app displays an order form to order coffee.
  */
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
     public void plusOrder(View view) {
-        int quantity=3;
+        int quantity=4;
         display(quantity);
         displayPrice(quantity * 5);
 
